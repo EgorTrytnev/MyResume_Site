@@ -46,8 +46,9 @@ const Skills = () => {
       skills: [
         { name: "ООП", level: 65 },
         { name: "MVC", level: 55 },
-        { name: "GigaChat", level: 55 },
-        { name: "Алгоритмы", level: 70 }
+        { name: "Алгоритмы", level: 70 },
+        { name: "Навык выставлять себе навыки", level: 55 }
+        
       ]
     }
   ];
