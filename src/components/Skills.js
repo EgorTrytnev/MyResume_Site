@@ -11,10 +11,10 @@ const Skills = () => {
       title: "Мобильная разработка",
       icon: <FaCode />,
       skills: [
-        { name: "iOS Swift", level: 85 },
-        { name: "UIKit", level: 80 },
-        { name: "Xcode", level: 90 },
-        { name: "Core Data", level: 75 }
+        { name: "iOS Swift", level: 65 },
+        { name: "UIKit", level: 70 },
+        { name: "Xcode", level: 70 },
+        { name: "Core Data", level: 65 }
       ]
     },
     {
@@ -23,9 +23,9 @@ const Skills = () => {
       icon: <FaTools />,
       skills: [
         { name: "Unity", level: 80 },
-        { name: "C#", level: 85 },
-        { name: "C++", level: 70 },
-        { name: "C", level: 75 }
+        { name: "C#", level: 60 },
+        { name: "C++", level: 50 },
+        { name: "C", level: 70 }
       ]
     },
     {
@@ -33,9 +33,9 @@ const Skills = () => {
       title: "Инструменты и технологии",
       icon: <FaDatabase />,
       skills: [
-        { name: "Git", level: 85 },
-        { name: "SQLite", level: 70 },
-        { name: "Python", level: 65 },
+        { name: "Git", level: 75 },
+        { name: "SQLite", level: 45 },
+        { name: "Python", level: 55 },
         { name: "VS Code", level: 80 }
       ]
     },
@@ -44,10 +44,10 @@ const Skills = () => {
       title: "Дополнительно",
       icon: <FaCloud />,
       skills: [
-        { name: "ООП", level: 90 },
-        { name: "MVC", level: 85 },
-        { name: "GigaChat", level: 70 },
-        { name: "Алгоритмы", level: 75 }
+        { name: "ООП", level: 75 },
+        { name: "MVC", level: 65 },
+        { name: "GigaChat", level: 55 },
+        { name: "Алгоритмы", level: 70 }
       ]
     }
   ];
