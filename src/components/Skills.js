@@ -11,8 +11,8 @@ const Skills = () => {
       title: "Мобильная разработка",
       icon: <FaCode />,
       skills: [
-        { name: "iOS Swift", level: 65 },
-        { name: "UIKit", level: 70 },
+        { name: "iOS Swift", level: 45 },
+        { name: "UIKit", level: 55 },
         { name: "Xcode", level: 70 },
         { name: "Core Data", level: 65 }
       ]
@@ -25,7 +25,7 @@ const Skills = () => {
         { name: "Unity", level: 80 },
         { name: "C#", level: 60 },
         { name: "C++", level: 50 },
-        { name: "C", level: 70 }
+        { name: "C", level: 75 }
       ]
     },
     {
@@ -44,8 +44,8 @@ const Skills = () => {
       title: "Дополнительно",
       icon: <FaCloud />,
       skills: [
-        { name: "ООП", level: 75 },
-        { name: "MVC", level: 65 },
+        { name: "ООП", level: 65 },
+        { name: "MVC", level: 55 },
         { name: "GigaChat", level: 55 },
         { name: "Алгоритмы", level: 70 }
       ]
