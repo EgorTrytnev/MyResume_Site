@@ -19,9 +19,8 @@ const Header = () => {
           transition={{ duration: 0.3 }}
         >
           <div className="profile-image">
-            {/* Заглушка для фото - замените на свое фото */}
             <div className="image-placeholder">
-            <img src={require('../images/Photo.jpg')} alt="Фото" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <img src={require('../images/Photo_2.jpg')} alt="Фото" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </div>
           </div>
         </motion.div>
