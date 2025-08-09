@@ -33,7 +33,7 @@ const Header = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           <h1 className="name">Трутнев Егор</h1>
-          <h2 className="title">Программист-разработчик</h2>
+          <h2 className="title">Backend-разработчик</h2>
           <p className="description">
             Увлеченный разработчик мобильных приложений с 6-летним опытом обучения. 
             Специализируюсь на С++ разработке, Unity и создании игр.
