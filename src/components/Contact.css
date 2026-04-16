@@ -1,9 +1,11 @@
 /* Стили для секции контактов */
 .contact-section {
   padding: 60px 0;
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 15px;
+  background: var(--surface);
+  border-radius: 14px;
   margin-bottom: 40px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-card);
 }
 
 .contact-content {
@@ -21,13 +23,13 @@
 .contact-info h3 {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #2c3e50;
+  color: var(--primary-deep);
   margin-bottom: 15px;
 }
 
 .contact-info > p {
   font-size: 1.1rem;
-  color: #555;
+  color: var(--text-soft);
   line-height: 1.6;
   margin-bottom: 30px;
 }
@@ -43,21 +45,21 @@
   align-items: center;
   gap: 15px;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.7);
+  background: var(--surface-strong);
   border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(255, 255, 255, 0.45);
   transition: all 0.3s ease;
 }
 
 .contact-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-  background: rgba(255, 255, 255, 0.9);
+  transform: translateY(-4px);
+  box-shadow: 0 18px 32px rgba(24, 44, 58, 0.12);
 }
 
 .contact-icon {
   font-size: 1.5rem;
-  color: #667eea;
+  color: var(--accent);
   min-width: 30px;
   text-align: center;
 }
@@ -65,28 +67,29 @@
 .contact-text h4 {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #2c3e50;
+  color: var(--primary-deep);
   margin-bottom: 5px;
 }
 
 .contact-text p {
   font-size: 1rem;
-  color: #666;
+  color: var(--text-soft);
   margin: 0;
 }
 
 /* Форма обратной связи */
 .contact-form {
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 15px;
+  background: var(--surface-strong);
+  border-radius: 12px;
   padding: 30px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(255, 255, 255, 0.45);
 }
 
 .contact-form h3 {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #2c3e50;
+  color: var(--primary-deep);
   margin-bottom: 25px;
   text-align: center;
 }
@@ -99,11 +102,11 @@
 .form-group textarea {
   width: 100%;
   padding: 15px;
-  border: 2px solid rgba(102, 126, 234, 0.2);
+  border: 1px solid rgba(30, 90, 120, 0.16);
   border-radius: 10px;
   font-size: 1rem;
   font-family: inherit;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.72);
   transition: all 0.3s ease;
   resize: vertical;
 }
@@ -111,9 +114,9 @@
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #667eea;
-  background: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  border-color: var(--primary);
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 0 0 3px rgba(30, 90, 120, 0.1);
 }
 
 .form-group input::placeholder,
@@ -129,7 +132,7 @@
 .submit-btn {
   width: 100%;
   padding: 15px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-deep) 100%);
   color: white;
   border: none;
   border-radius: 10px;
@@ -141,12 +144,12 @@
   justify-content: center;
   gap: 10px;
   transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 12px 24px rgba(30, 90, 120, 0.24);
 }
 
 .submit-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 18px 30px rgba(30, 90, 120, 0.3);
 }
 
 .submit-btn:active {

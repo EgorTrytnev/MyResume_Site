@@ -1,4 +1,19 @@
-/* Основные стили приложения */
+:root {
+  --bg-start: #f2ede3;
+  --bg-end: #dce8ec;
+  --surface: rgba(255, 255, 255, 0.72);
+  --surface-strong: rgba(255, 255, 255, 0.9);
+  --surface-soft: rgba(255, 255, 255, 0.58);
+  --primary: #1e5a78;
+  --primary-deep: #163e52;
+  --accent: #c48a47;
+  --text-main: #1f2f37;
+  --text-soft: #53646c;
+  --border-color: rgba(30, 90, 120, 0.12);
+  --shadow-soft: 0 18px 45px rgba(24, 44, 58, 0.08);
+  --shadow-card: 0 14px 34px rgba(24, 44, 58, 0.08);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,10 +21,13 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Avenir Next', 'Trebuchet MS', 'Segoe UI', sans-serif;
   line-height: 1.6;
-  color: #333;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: var(--text-main);
+  background:
+    radial-gradient(circle at top left, rgba(196, 138, 71, 0.18), transparent 30%),
+    radial-gradient(circle at top right, rgba(30, 90, 120, 0.2), transparent 28%),
+    linear-gradient(160deg, var(--bg-start) 0%, var(--bg-end) 100%);
   min-height: 100vh;
 }
 
@@ -21,13 +39,14 @@ body {
 .resume-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding: 28px;
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 18px;
+  box-shadow: var(--shadow-soft);
+  margin-top: 28px;
+  margin-bottom: 28px;
 }
 
 /* Общие стили для секций */
@@ -38,28 +57,29 @@ body {
 }
 
 .section-title {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   font-weight: 700;
-  color: #2c3e50;
-  margin-bottom: 40px;
+  color: var(--primary-deep);
+  margin-bottom: 34px;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 15px;
+  letter-spacing: -0.03em;
 }
 
 .section-icon {
   font-size: 2rem;
-  color: #667eea;
+  color: var(--accent);
 }
 
 /* Адаптивность */
 @media (max-width: 768px) {
   .resume-container {
     margin: 10px;
-    padding: 15px;
-    border-radius: 15px;
+    padding: 18px;
+    border-radius: 14px;
   }
   
   .section-title {
@@ -76,7 +96,7 @@ body {
 @media (max-width: 480px) {
   .resume-container {
     margin: 5px;
-    padding: 10px;
+    padding: 14px;
   }
   
   .section-title {

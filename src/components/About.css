@@ -1,9 +1,11 @@
 /* Стили для секции "О себе" */
 .about-section {
   padding: 60px 0;
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 15px;
+  background: var(--surface);
+  border-radius: 14px;
   margin-bottom: 40px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-card);
 }
 
 .about-content {
@@ -15,19 +17,34 @@
 
 /* Основная информация */
 .about-info {
-  padding-right: 30px;
+  padding: 28px;
+  padding-right: 32px;
+  background: var(--surface-soft);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
 }
 
 .about-text {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #555;
+  color: var(--text-soft);
   margin-bottom: 20px;
-  text-align: justify;
 }
 
 .about-text:last-child {
-  margin-bottom: 0;
+  margin-bottom: 20px;
+}
+
+.about-points {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 12px;
+  color: var(--text-main);
+}
+
+.about-points li {
+  line-height: 1.65;
 }
 
 /* Детали */
@@ -42,21 +59,21 @@
   align-items: center;
   gap: 20px;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.7);
+  background: var(--surface-strong);
   border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(255, 255, 255, 0.45);
   transition: all 0.3s ease;
 }
 
 .detail-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-  background: rgba(255, 255, 255, 0.9);
+  transform: translateY(-4px);
+  box-shadow: 0 18px 32px rgba(24, 44, 58, 0.12);
 }
 
 .detail-icon {
   font-size: 1.5rem;
-  color: #667eea;
+  color: var(--accent);
   min-width: 30px;
   text-align: center;
 }
@@ -64,13 +81,13 @@
 .detail-content h4 {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #2c3e50;
+  color: var(--primary-deep);
   margin-bottom: 5px;
 }
 
 .detail-content p {
   font-size: 1rem;
-  color: #666;
+  color: var(--text-soft);
   margin: 0;
 }
 
@@ -86,7 +103,7 @@
   }
   
   .about-info {
-    padding-right: 0;
+    padding: 22px;
   }
   
   .about-text {
@@ -112,6 +129,10 @@
     gap: 20px;
   }
   
+  .about-info {
+    padding: 18px;
+  }
+
   .detail-item {
     padding: 12px;
     gap: 12px;

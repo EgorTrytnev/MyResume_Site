@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaCode, FaTools, FaDatabase, FaCloud } from 'react-icons/fa';
+import { FaUsers, FaDatabase, FaCloud, FaCode, FaUser, FaAddressCard } from 'react-icons/fa';
 import './Skills.css';
 
 const Skills = () => {
@@ -8,49 +8,78 @@ const Skills = () => {
   const skillCategories = [
     {
       id: 1,
-      title: "Мобильная разработка",
+      title: "Основной стек",
       icon: <FaCode />,
+      description: "Языки и backend-основа.",
       skills: [
-        { name: "iOS Swift", level: 45 },
-        { name: "UIKit", level: 55 },
-        { name: "Xcode", level: 70 },
-        { name: "Core Data", level: 65 }
+        { name: "C/C++", level: 65 },
+        { name: "C#", level: 60 },
+        { name: "Go", level: 40 },
+        { name: "Visual Studio", level: 70 }
+
       ]
     },
     {
       id: 2,
-      title: "Разработка",
-      icon: <FaTools />,
+      title: "Серверы и сети",
+      icon: <FaCloud />,
+      description: "Протоколы и обмен данными.",
       skills: [
-        { name: "Unity", level: 80 },
-        { name: "C#", level: 60 },
-        { name: "C++", level: 50 },
-        { name: "C", level: 75 }
+        { name: "HTTP", level: 82 },
+        { name: "WebSocket", level: 76 },
+        { name: "WebRTC", level: 67 },
+        { name: "Клиент-серверная архитектура", level: 81 }
       ]
     },
     {
       id: 3,
-      title: "Инструменты и технологии",
+      title: "Базы данных",
       icon: <FaDatabase />,
+      description: "SQL и хранение данных.",
       skills: [
-        { name: "Git", level: 75 },
-        { name: "SQLite", level: 45 },
-        { name: "Python", level: 55 },
-        { name: "VS Code", level: 80 }
+        { name: "SQL", level: 75 },
+        { name: "PostgreSQL", level: 68 },
+        { name: "SQLite", level: 72 },
+        { name: "MongoDB", level: 64 }
       ]
     },
     {
       id: 4,
-      title: "Дополнительно",
-      icon: <FaCloud />,
+      title: "Инженерная практика",
+      icon: <FaUsers />,
+      description: "API, контейнеры и процессы.",
       skills: [
-        { name: "ООП", level: 65 },
-        { name: "MVC", level: 55 },
-        { name: "Алгоритмы", level: 70 },
-        { name: "Выставлять себе навыки", level: 55 }
-        
+        { name: "REST API", level: 78 },
+        { name: "Контейнеризация", level: 69 },
+        { name: "Git", level: 76 },
+        { name: "Работа в команде", level: 88 }
+      ]
+    },
+    {
+      id: 5,
+      title: "AI и прикладная логика",
+      icon: <FaUser />,
+      description: "Дополнительный рабочий контур.",
+      skills: [
+        { name: "Python", level: 82 },
+        { name: "Работа с LLM", level: 84 },
+        { name: "Промт инженеринг", level: 78 },
+        { name: "Валидация ответов модели", level: 76 }
+      ]
+    },
+        {
+      id: 6,
+      title: "Личные навыки и развитие",
+      icon: <FaAddressCard />,
+      description: "Навыки, которые помогают в профессиональном росте.",
+      skills: [
+        { name: "Адаптивность", level: 75 },
+        { name: "Коммуникация", level: 90 },
+        { name: "Лидерство", level: 60 },
+        { name: "Выстравлять себе навыки", level: 80 }
       ]
     }
+
   ];
 
   return (
@@ -87,7 +116,10 @@ const Skills = () => {
                 <div className="category-icon">
                   {category.icon}
                 </div>
-                <h3 className="category-title">{category.title}</h3>
+                <div>
+                  <h3 className="category-title">{category.title}</h3>
+                  <p className="category-description">{category.description}</p>
+                </div>
               </div>
 
               <div className="skills-list">

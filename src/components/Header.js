@@ -4,6 +4,8 @@ import { FaGithub, FaEnvelope, FaPhone } from 'react-icons/fa';
 import './Header.css';
 
 const Header = () => {
+  const focusTags = ['Python', 'C/C++', 'LLM', 'Networking'];
+
   return (
     <motion.header 
       className="header"
@@ -32,12 +34,22 @@ const Header = () => {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
+          <p className="header-eyebrow">Backend • Go • C/C++ • Networking</p>
           <h1 className="name">Трутнев Егор</h1>
           <h2 className="title">Backend-разработчик</h2>
           <p className="description">
-            Увлеченный разработчик мобильных приложений с 6-летним опытом обучения. 
-            Специализируюсь на С++ разработке, Unity и создании игр.
+            Разрабатываю клиент-серверные приложения и серверную логику, работаю с Go, C, C++,
+            C#, SQL и сетевыми протоколами HTTP, WebSocket и WebRTC. Дополнительно использую
+            LLM-интеграции в прикладных задачах, где важны структура ответа и надежная валидация.
           </p>
+
+          <div className="focus-tags">
+            {focusTags.map((tag) => (
+              <span key={tag} className="focus-tag">
+                {tag}
+              </span>
+            ))}
+          </div>
           
           {/* Социальные ссылки */}
           <motion.div 
