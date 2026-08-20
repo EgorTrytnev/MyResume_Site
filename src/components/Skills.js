@@ -12,6 +12,7 @@ const Skills = () => {
       icon: <FaCode />,
       description: "Языки и backend-основа.",
       skills: [
+        { name: "Python", level: 86 },
         { name: "C/C++", level: 65 },
         { name: "C#", level: 60 },
         { name: "Go", level: 40 },
@@ -51,7 +52,9 @@ const Skills = () => {
       skills: [
         { name: "REST API", level: 78 },
         { name: "Контейнеризация", level: 69 },
+        { name: "Kubernetes", level: 62 },
         { name: "Git", level: 76 },
+        { name: "GitLab", level: 70 },
         { name: "Работа в команде", level: 88 }
       ]
     },
@@ -61,7 +64,6 @@ const Skills = () => {
       icon: <FaUser />,
       description: "Дополнительный рабочий контур.",
       skills: [
-        { name: "Python", level: 82 },
         { name: "Работа с LLM", level: 84 },
         { name: "Промт инженеринг", level: 78 },
         { name: "Валидация ответов модели", level: 76 }
@@ -75,6 +77,7 @@ const Skills = () => {
       skills: [
         { name: "Адаптивность", level: 75 },
         { name: "Коммуникация", level: 90 },
+        { name: "Структура проекта", level: 78 },
         { name: "Лидерство", level: 60 },
         { name: "Выстравлять себе навыки", level: 80 }
       ]
