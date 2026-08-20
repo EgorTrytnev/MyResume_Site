@@ -24,6 +24,7 @@
 .skill-category {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   height: 100%;
   background: var(--surface-strong);
   border-radius: 12px;
@@ -87,7 +88,6 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-top: auto;
 }
 
 .skill-item {
